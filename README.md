@@ -23,7 +23,6 @@ The application includes the following routes:
 
 /survey : Customer survey form asking for details and preferences
 
-/survey_result : Displays the responses submitted by the user
 
 ⚙️ Technologies Used
 
@@ -36,3 +35,4 @@ EJS (Embedded JavaScript Templates)
 HTML5 / CSS3
 
 💻 Installation
+1.Clone your github repository: git clone <your-repository-link> to your VM. 2.Run forever start index.js on your VM. 3.Run the submission link in my links.txt file on a browser to access My Thirsty Student App.
