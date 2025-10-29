@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Customer Survey - <%= shopName %></title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1><%= shopName %> - Customer Survey</h1>
+    <p>Please complete this survey form below:</p>
+
+    <form action="/survey_result" method="POST">
+
+      <!-- First Name -->
+      <label for="first">First Name:</label><br>
+      <input
+        type="text"
+        id="first"
+        name="first"
+        required
+        pattern="[A-Za-z]+"
+        title="First name should only contain letters."
+      ><br><br>
+
+      <!-- Surname -->
+      <label for="last">Surname:</label><br>
+      <input
+        type="text"
+        id="last"
+        name="last"
+        required
+        pattern="[A-Za-z]+"
+        title="Surname should only contain letters."
+      ><br><br>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label><br>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        title="Please enter a valid email address."
+      ><br><br>
+
+      <!-- Age -->
+      <label for="age">How old are you?</label><br>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        required
+        min="10"
+        max="120"
+        title="Please enter a valid age between 10 and 120."
+      ><br><br>
+
+      <!-- Drink Category -->
+      <p>Which of the following drinks categories do you consume?</p>
+      <% for (let i = 0; i < productCategories.length; i++) { %>
+        <input
+          type="radio"
+          id="cat_<%= i %>"
+          name="category"
+          value="<%= productCategories[i] %>"
+          required
+        >
+        <label for="cat_<%= i %>"><%= productCategories[i] %></label><br>
+      <% } %>
+      <br>
+
+      <!-- Student Checkbox -->
+      <label>
+        <input type="checkbox" name="student" value="true">
+        Are you a student?
+      </label><br><br>
+
+      <input type="submit" value="Submit Survey">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 20px;
+}
+
+h1 {
+  color: #2a52be;
+}
+
+ul {
+  list-style-type: square;
+}
+
+input[type="text"], input[type="submit"] {
+  padding: 5px;
+  margin: 5px 0;
+}
