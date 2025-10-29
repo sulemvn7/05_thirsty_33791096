@@ -8,12 +8,12 @@ The app simulates a drinks shop where users can browse products, search for item
 
 The application includes the following routes:
 
-/ : Homepage displaying the shop name and product categories
-/about : Shows shop locations, managers, and addresses
-/search : Contains a form allowing users to search by name and category
-/search_result : Displays search results based on user input
-/register : Registration form for new customers
-/registered : Displays confirmation with customer name and email
+/ : Homepage displaying the shop name and product categories,
+/about : Shows shop locations, managers, and addresses,
+/search : Contains a form allowing users to search by name and category,
+/search_result : Displays search results based on user input,
+/register : Registration form for new customers,
+/registered : Displays confirmation with customer name and email,
 /survey : Customer survey form asking for details and preferences
 
 Technologies Used
