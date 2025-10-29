@@ -15,11 +15,7 @@ The application includes the following routes:
 
 /search : Contains a form allowing users to search by name and category
 
-/search_result : Displays search results based on user input
-
 /register : Registration form for new customers
-
-/registered : Displays confirmation with customer name and email
 
 /survey : Customer survey form asking for details and preferences
 
