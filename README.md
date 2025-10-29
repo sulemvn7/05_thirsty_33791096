@@ -26,9 +26,9 @@ Node.js
 
 Express.js
 
-EJS (Embedded JavaScript Templates)
+EJS 
 
-HTML5 / CSS3
+HTML / CSS
 
 💻 Installation
 1.Clone your github repository: git clone <your-repository-link> to your VM. 2.Run forever start index.js on your VM. 3.Run the submission link in my links.txt file on a browser to access My Thirsty Student App.
